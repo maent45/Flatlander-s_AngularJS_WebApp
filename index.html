@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Flatlander's Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body data-ng-controller="StoreController as store">
+
+    <div class="container" data-ng-repeat="product in store.products">
+        <h1>{{products.name}}</h1>
+        <h2>${{products.price}}</h2>
+        <p>{{products.description}}</p>
+        <button class="btn btn-success">Add to Cart</button>
+    </div>
+
+<!-- scripts -->
+<script src="js/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
