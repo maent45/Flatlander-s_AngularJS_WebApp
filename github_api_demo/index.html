@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Flatlander's Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body ng-controller="StoreController as store">
+
+<div class="container">
+    <div class="col-lg-6" ng-repeat="product in products">
+        <div>
+
+            name: {{product.login}}
+            <img class="img-responsive" ng-src="{{product.image}}"/>
+            <button class="btn btn-success" ng-show="product.canPurchase">Add to Cart</button>
+
+            <section ng-controller="PanelController as panel" style="margin-top: 5%; background-color: lightgray; padding: 2%; border-radius: 5px;">
+
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- scripts -->
+<script src="js/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
