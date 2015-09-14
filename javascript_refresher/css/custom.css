@@ -1,0 +1,15 @@
+.mainContainer{
+    background-color: #337ab7;
+    padding: 2%;
+    border-radius: 15px;
+    margin-top: 5%;
+}
+li input{
+    display: none;
+}
+li.edit span{
+    display: none;
+}
+li.edit input{
+    display: initial;
+}
