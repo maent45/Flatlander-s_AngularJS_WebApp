@@ -1,8 +1,14 @@
+body{
+    font-family: Calibri;
+}
 .mainContainer{
     background-color: #337ab7;
     padding: 2%;
     border-radius: 15px;
     margin-top: 5%;
+}
+li{
+    font-size: 1.5em;
 }
 li input{
     display: none;
