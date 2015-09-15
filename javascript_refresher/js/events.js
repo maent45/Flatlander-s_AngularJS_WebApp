@@ -31,7 +31,13 @@ function updateItem() {
 
 //function to call updateItem on pressing 'Enter' key
 function itemKeypress() {
+    //'13' represents the enter key
     if (event.which === 13) {
         updateItem.call(this);
     }
 }
+
+//function to add new tasks
+$("#btnAddTask").click(function() {
+    $("ul").append("<li><span>Apples</span></li>")
+});
