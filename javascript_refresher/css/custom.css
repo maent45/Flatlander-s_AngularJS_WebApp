@@ -3,7 +3,6 @@ body{
 }
 .mainContainer{
     background-color: #337ab7;
-    padding: 2%;
     border-radius: 15px;
     margin-top: 5%;
 }
@@ -27,5 +26,15 @@ li.edit input{
     margin-bottom: 3%;
 }
 .leftPanel h2{
+    color: #419641;
+}
+
+/*--- right panel css ---*/
+.rightPanel{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.rightPanel h2{
     color: #419641;
 }
