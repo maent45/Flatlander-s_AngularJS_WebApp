@@ -19,3 +19,13 @@ li.edit span{
 li.edit input{
     display: initial;
 }
+
+/*--- left panel css ---*/
+.leftPanel{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.leftPanel h2{
+    color: #419641;
+}
