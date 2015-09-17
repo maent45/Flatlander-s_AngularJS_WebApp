@@ -41,3 +41,12 @@ function itemKeypress() {
 $("#btnAddTask").click(function() {
     $("ul").append("<li><span>Apples</span></li>")
 });
+
+
+//access the task to prioritise
+var priTask = document.getElementById("testApple");
+
+//function to prioritise task
+function prioritiseTask() {
+    addEventListener()
+}

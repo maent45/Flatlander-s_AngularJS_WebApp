@@ -12,11 +12,18 @@
     <h1>Task Manager</h1>
     <hr>
 
+    <!--- priority panel --->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 priorityPanel">
+            <h3>Prioritised Tasks:</h3>
+        </div>
+    </div>
+
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <!--- left panel --->
         <div class="col-lg-6">
             <div class="col-lg-12 leftPanel">
-                <h2>To Do:</h2>
+                <h3>To Do:</h3>
                 <button class="btn btn-info pull-right" id="btnAddTask">Add New Task</button>
                 <br/>
                 <ul id="checklist">
@@ -39,12 +46,12 @@
         <!--- right panel --->
         <div class="col-lg-6">
             <div class="col-lg-12 rightPanel">
-                <h2>Done:</h2>
+                <h3>Done:</h3>
                 <button class="btn btn-success pull-right">Archive Task</button>
                 <br/>
                 <ul>
                     <li>
-                        <span>Apples</span>
+                        <span id="testApple">Apples</span>
                         <input value="Apples">
                     </li>
                     <li>

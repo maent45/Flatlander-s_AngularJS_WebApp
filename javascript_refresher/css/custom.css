@@ -19,6 +19,17 @@ li.edit input{
     display: initial;
 }
 
+/*--- priority panel css ---*/
+.priorityPanel{
+    background-color: #d58512;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+.priorityPanel h3{
+    color: #333;
+}
+
 /*--- left panel css ---*/
 .leftPanel{
     background-color: lightgray;
