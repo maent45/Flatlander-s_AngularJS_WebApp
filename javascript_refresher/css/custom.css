@@ -29,6 +29,10 @@ li.edit input{
 .priorityPanel h3{
     color: #333;
 }
+.priorityPanelInner{
+    background-color: orangered;
+    text-align: center;
+}
 
 /*--- left panel css ---*/
 .leftPanel{
