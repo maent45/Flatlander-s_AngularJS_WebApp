@@ -23,6 +23,14 @@ body{
 .newTaskContainer li span{
     padding-left: 10px;
 }
+.newTaskContainer input{
+    visibility: visible;
+}
+.taskChecked{
+    text-decoration: line-through;
+    color: #419641;
+    font-weight: bold;
+}
 
 /*--- priority panel css ---*/
 .priorityPanel{
