@@ -33,17 +33,30 @@
         <div class="col-lg-6">
             <div class="col-lg-12 leftPanel">
                 <h3>To Do:</h3>
-                <span>Total:</span>
-                <!--- new task input field --->
-                <div class="form-group">
-                    <label for="newTaskText">Task Name:</label>
-                    <input class="form-control" id="newTaskText">
+                <span>Total:&nbsp;<span id="totalTasks"></span></span>
+
+                    <div class="col-lg-8">
+                        <!--- new task input field --->
+                        <div class="form-group">
+                            <label for="newTaskText">Task Name:</label>
+                            <input class="form-control" id="newTaskText">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn btn-info" id="btnAddTask" style="margin-top: 4.5%;">Add New Task</button>
+                    </div>
+
+                <div class="col-lg-12">
+                    <button class="btn btn-info pull-right" id="btnSelectTask">Select Tasks</button>
                 </div>
-                <button class="btn btn-info pull-right" id="btnAddTask">Add New Task</button>
+
                 <br/>
-                <ul id="toDoList" class="newTaskContainer">
-                    <li>swdef</li>
-                </ul>
+                <div class="col-lg-12">
+                    <ul id="toDoList" class="newTaskContainer">
+
+                    </ul>
+                </div>
+
             </div>
         </div>
 

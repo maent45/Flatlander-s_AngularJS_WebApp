@@ -3,37 +3,51 @@
  */
 
 
-//get btnAddTask reference
 var btnAddTask = document.getElementById("btnAddTask");
-//get toDoList reference
 var toDoList = document.getElementById("toDoList");
-
-//reference to Task Name input box
 var newTaskText = document.getElementById("newTaskText");
+
+var totalTaskIndicator = document.getElementById("totalTasks");
+var numOfTasks = 0;
+
 newTaskText.focus();
 
 //
 btnAddTask.onclick = function() {
     var newTaskName = newTaskText.value;
 
-    //if task prompt is cancelled or left blank don't create new li element
-    if(!newTaskName || newTaskName == ""){
+    if(newTaskName == ""){
         alert("You must name the task before adding it.");
         newTaskText.focus();
         return false;
     }
-
-    addNewTask(document.getElementById("toDoList"), newTaskName);
+    else{
+        addNewTask(document.getElementById("toDoList"), newTaskName);
+        totalTaskIndicator.innerHTML++;
+    }
 };
+
+function updateItemStatus() {
+    var cbId = this.id.replace("cb_", "");
+    var taskText = document.getElementById("task_", cbId);
+
+    taskText.innerText = "sdf";
+}
 
 //function to add new task
 function addNewTask(list, newTaskName) {
+    numOfTasks++;
     //create new elements
     var newTask = document.createElement("li");
-    var checkBox = document.createElement("input");
-    var span = document.createElement("span");
 
+    var checkBox = document.createElement("input");
     checkBox.type = "checkbox";
+    checkBox.id = "cb_" + numOfTasks;
+    checkBox.onclick = updateItemStatus;
+
+    var span = document.createElement("span");
+    span.id = "task_" + numOfTasks;
+
     //give span default text
     span.innerText = newTaskName;
 
